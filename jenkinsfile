@@ -1,0 +1,14 @@
+pipeline {
+    agent any
+    stages {
+        stage ('declarative_script'){
+            steps{
+                sh '''#!/bin/bash
+                      sleep 40
+                      echo "Hello_DeclarativeScript_Pipeline"'''
+            }
+        }
+    }
+    
+    
+}
